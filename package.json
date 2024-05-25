@@ -1,0 +1,10 @@
+{
+  "name": "@coldsurfers/zod-schema",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "yungblud <killi8n@gmail.com>",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
