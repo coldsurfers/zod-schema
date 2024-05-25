@@ -4,7 +4,34 @@
   "license": "MIT",
   "author": "yungblud <killi8n@gmail.com>",
   "main": "index.js",
+  "scripts": {
+    "prerelease": "yarn generate",
+    "release": "release-it minor --ci",
+    "prerelease:rc": "yarn generate",
+    "release:rc": "release-it --ci --preRelease=rc"
+  },
+  "devDependencies": {
+    "release-it": "^17.3.0"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release @coldsurfers/prisma-schema v${version}",
+      "tagName": "prisma-schema-v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "hooks": {
+      "after:git:release": "git reset --hard HEAD"
+    },
+    "npm": {
+      "versionArgs": [
+        "--allow-same-version",
+        "--workspaces-update=false"
+      ]
+    }
   }
 }
