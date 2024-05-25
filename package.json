@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "yungblud <killi8n@gmail.com>",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prerelease": "yarn generate",
     "release": "release-it minor --ci",
