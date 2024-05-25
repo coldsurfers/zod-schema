@@ -18,8 +18,8 @@
   },
   "release-it": {
     "git": {
-      "commitMessage": "chore: release @coldsurfers/prisma-schema v${version}",
-      "tagName": "prisma-schema-v${version}"
+      "commitMessage": "chore: release @coldsurfers/zod-schema v${version}",
+      "tagName": "zod-schema-v${version}"
     },
     "github": {
       "release": true
