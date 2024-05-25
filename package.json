@@ -6,9 +6,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prerelease": "yarn generate",
+    "build": "tsc",
+    "prerelease": "yarn build",
     "release": "release-it minor --ci",
-    "prerelease:rc": "yarn generate",
+    "prerelease:rc": "yarn build",
     "release:rc": "release-it --ci --preRelease=rc"
   },
   "devDependencies": {
